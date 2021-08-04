@@ -16,7 +16,7 @@
 <div style="background-color:blue; width:200px; height:200px; position:fixed; top:40px; left: 49px;" id="div">Delegated ink trail should match the color of this div.</div>
 <script>
   let ctx = canvas.getContext('2d');
-  let presenter = navigator.ink.requestPresenter('delegated-ink-trail', canvas);
+  let presenter = navigator.ink.requestPresenter({presentationArea: canvas});
   let move_cnt = 0;
   let style = { color: "rgba(0, 0, 255, 1)", diameter: 10 };
 
